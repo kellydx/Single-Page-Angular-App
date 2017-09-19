@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@section Scripts {
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/js/app-home.js"></script>
+    <script src="~/js/homeController.js"></script>
+}
+<div class="row" ng-app="app-home">
+    <div ng-controller="homeController as vm">
+        <div class="drop-zone" plkr-file-drop-zone content="text">
+            <textarea>{{text}}</textarea>
+        </div>
+    </div>
+    <h1>The World</h1>
+    <p>This will be a fun website soon!</p>
+    <div>{{2+2}}</div>
+    <form>
+        <div>
+            <label>Date</label>
+            <input />
+        </div>
+        <div>
+            <label>Location</label>
+            <input />
+        </div>
+        <div><input type="submit" value="Add" /></div>
+    </form>
+</div>
