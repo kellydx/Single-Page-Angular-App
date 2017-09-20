@@ -260,5 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 
-# everything in lib folder
+# Exclude lib folder
 lib/

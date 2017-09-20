@@ -1,0 +1,41 @@
+﻿@*The common content that is reused on every page*@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+
+<body>
+
+    <div id="sidebar">
+        @*<img src="~/img/user1.jpg" alt="placeHolder" class="placeHolder" />
+            <span id="placeHolder">placeHolder</span>*@
+        <ul class="menu">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="wrapper">
+        <div id="main">
+            <div>
+                <button id="menuToggle">PlaceHolder</button>
+            </div>
+            @RenderBody()
+        </div>
+        <div id="footer">
+            PlaceHolder
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @RenderSection("scripts", false)
+
+    <script src="~/js/site.js"></script>
+</body>
+
+</html>
